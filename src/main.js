@@ -263,12 +263,20 @@ function initPageAnimations() {
     });
   });
 
-  // ── Pillar Cards
-  document.querySelectorAll('.pillar-card').forEach((card, i) => {
-    gsap.from(card, {
-      scrollTrigger: { trigger: card, start: 'top 85%', toggleActions: 'play none none none' },
-      opacity: 0, y: 40, duration: 0.6, delay: i * 0.15,
-      clearProps: 'transform,opacity',
+  // ── Pillar Rows
+  document.querySelectorAll('.pillar-row').forEach((row, i) => {
+    const isAlt = row.classList.contains('pillar-row--alt');
+    gsap.from(row.querySelector('.pillar-number'), {
+      scrollTrigger: { trigger: row, start: 'top 85%', toggleActions: 'play none none none' },
+      opacity: 0, scale: 0.5, duration: 0.5, clearProps: 'transform,opacity',
+    });
+    gsap.from(row.querySelector('.pillar-accent'), {
+      scrollTrigger: { trigger: row, start: 'top 85%', toggleActions: 'play none none none' },
+      scaleY: 0, transformOrigin: 'top', duration: 0.4, delay: 0.2, clearProps: 'transform,opacity',
+    });
+    gsap.from(row.querySelector('.pillar-text'), {
+      scrollTrigger: { trigger: row, start: 'top 85%', toggleActions: 'play none none none' },
+      opacity: 0, x: isAlt ? -25 : 25, duration: 0.5, delay: 0.3, clearProps: 'transform,opacity',
     });
   });
 

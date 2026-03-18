@@ -65,32 +65,41 @@ export function content() {
                 <h2 class="section-title">Forming the Whole Person</h2>
                 <div class="title-rule"></div>
                 
-                <div class="grid grid-3 mt-32">
-                    <div class="pillar-card">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14zM6.5 19a.5.5 0 0 1 0-1H20v1H6.5z"/></svg>
+                <div class="pillars mt-32">
+                    <div class="pillar-row">
+                        <div class="pillar-number">01</div>
+                        <div class="pillar-body">
+                            <div class="pillar-accent"></div>
+                            <div class="pillar-text">
+                                <h3>Rigorous Academics</h3>
+                                <p>A DepEd-recognized curriculum from Grades 7 through 12, enriched by Adventist philosophy. Bilingual instruction emphasizing critical thinking, moral development, and individualized attention from dedicated faculty.</p>
+                                <a href="/academics" data-link class="pillar-link">Explore Academics &#8594;</a>
+                            </div>
                         </div>
-                        <h3>Rigorous Academics</h3>
-                        <p>A DepEd-recognized curriculum from Grades 7-12, enriched by the Adventist philosophy of learning. Our bilingual instruction emphasizes critical thinking, moral development, and individualized attention.</p>
-                        <a href="/academics" data-link class="pillar-link">Explore Academics &#8594;</a>
-                    </div>
-                    
-                    <div class="pillar-card">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-                        </div>
-                        <h3>A Home Away From Home</h3>
-                        <p>Structured, safe boarding with separate supervised dormitories. Our hilltop campus fosters a close-knit community where students build lifelong friendships and vital life skills.</p>
-                        <a href="/campus" data-link class="pillar-link">Discover Campus &#8594;</a>
                     </div>
 
-                    <div class="pillar-card">
-                        <div class="pillar-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                    <div class="pillar-row pillar-row--alt">
+                        <div class="pillar-number">02</div>
+                        <div class="pillar-body">
+                            <div class="pillar-accent"></div>
+                            <div class="pillar-text">
+                                <h3>A Home Away From Home</h3>
+                                <p>Structured, safe boarding with separate supervised dormitories on our hilltop campus. A close-knit sanctuary where students build lifelong friendships, independence, and vital life skills far from the distractions of the city.</p>
+                                <a href="/campus" data-link class="pillar-link">Discover Campus Life &#8594;</a>
+                            </div>
                         </div>
-                        <h3>Faith at the Center</h3>
-                        <p>Daily worship, meaningful Bible study, and an uplifting Week of Prayer. Our campus church is the heart of school life, nurturing a personal relationship with the Creator.</p>
-                        <a href="/spiritual-life" data-link class="pillar-link">Explore Spiritual Life &#8594;</a>
+                    </div>
+
+                    <div class="pillar-row">
+                        <div class="pillar-number">03</div>
+                        <div class="pillar-body">
+                            <div class="pillar-accent"></div>
+                            <div class="pillar-text">
+                                <h3>Faith at the Center</h3>
+                                <p>Daily worship, meaningful Bible study, and an inspiring Week of Prayer. Our campus church is the heartbeat of school life, nurturing each student's personal relationship with their Creator and equipping them for selfless service.</p>
+                                <a href="/spiritual-life" data-link class="pillar-link">Explore Spiritual Life &#8594;</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
