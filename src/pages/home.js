@@ -65,50 +65,39 @@ export function content() {
                 <h2 class="section-title">Forming the Whole Person</h2>
                 <div class="title-rule"></div>
                 
-                <div class="bento-grid mt-32">
-                    <div class="bento-tile bento-large bento-navy">
-                        <div class="bento-label">01</div>
+                <p class="section-subtitle">Discover why families across Eastern Visayas choose EVAA for a holistic, Christ-centered education that develops mind, body, and spirit.</p>
+
+                <div class="features-row mt-32">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        </div>
                         <h3>Rigorous Academics</h3>
-                        <p>DepEd-recognized curriculum from Grades 7 through 12. Bilingual instruction emphasizing critical thinking, moral development, and individualized attention.</p>
-                        <a href="/academics" data-link class="bento-link">Explore &#8594;</a>
+                        <p>DepEd-recognized Grades 7-12 curriculum enriched by Adventist philosophy, with bilingual instruction and individualized faculty attention.</p>
                     </div>
-                    <div class="bento-tile bento-gold">
-                        <div class="bento-stat">7-12</div>
-                        <div class="bento-stat-label">Complete Secondary</div>
-                    </div>
-                    <div class="bento-tile bento-cream">
-                        <div class="bento-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14zM6.5 19a.5.5 0 0 1 0-1H20v1H6.5z"/></svg>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                         </div>
-                        <span class="bento-caption">DepEd Region VIII Recognized</span>
+                        <h3>Boarding Community</h3>
+                        <p>Safe, supervised dormitories on a peaceful hilltop campus where students build lifelong friendships and essential life skills.</p>
                     </div>
-                    <div class="bento-tile bento-cream">
-                        <div class="bento-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                         </div>
-                        <span class="bento-caption">Hilltop Boarding Campus</span>
+                        <h3>Faith-Centered</h3>
+                        <p>Daily worship, Bible study, and an inspiring Week of Prayer nurturing each student's personal relationship with their Creator.</p>
                     </div>
-                    <div class="bento-tile bento-large bento-navy-light">
-                        <div class="bento-label">02</div>
-                        <h3>A Home Away From Home</h3>
-                        <p>Structured, safe boarding with separate supervised dormitories. A close-knit sanctuary for lifelong friendships, independence, and vital life skills.</p>
-                        <a href="/campus" data-link class="bento-link">Discover &#8594;</a>
-                    </div>
-                    <div class="bento-tile bento-tall bento-navy-mid">
-                        <div class="bento-label">03</div>
-                        <h3>Faith at the Center</h3>
-                        <p>Daily worship, meaningful Bible study, and an inspiring Week of Prayer. Our campus church nurtures each student's relationship with their Creator.</p>
-                        <a href="/spiritual-life" data-link class="bento-link">Explore &#8594;</a>
-                    </div>
-                    <div class="bento-tile bento-gold-dark">
-                        <div class="bento-stat">Est.</div>
-                        <div class="bento-stat-large">1992</div>
-                    </div>
-                    <div class="bento-tile bento-cream">
-                        <div class="bento-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                         </div>
-                        <span class="bento-caption">SDA Accredited</span>
+                        <h3>Character Formation</h3>
+                        <p>Developing servant-leaders through mentorship, community outreach, and a values-driven environment rooted in Christian principles.</p>
                     </div>
                 </div>
             </div>

@@ -263,11 +263,11 @@ function initPageAnimations() {
     });
   });
 
-  // ── Bento Tiles
-  document.querySelectorAll('.bento-tile').forEach((tile, i) => {
-    gsap.from(tile, {
-      scrollTrigger: { trigger: tile, start: 'top 88%', toggleActions: 'play none none none' },
-      opacity: 0, y: 30, scale: 0.95, duration: 0.5, delay: i * 0.06,
+  // ── Feature Items
+  document.querySelectorAll('.feature-item').forEach((item, i) => {
+    gsap.from(item, {
+      scrollTrigger: { trigger: item, start: 'top 88%', toggleActions: 'play none none none' },
+      opacity: 0, y: 25, duration: 0.5, delay: i * 0.1,
       clearProps: 'transform,opacity',
     });
   });
