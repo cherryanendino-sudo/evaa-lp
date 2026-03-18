@@ -102,12 +102,16 @@ function initCarousel() {
 
   if (!track || cards.length === 0) return;
 
-  // Configuration
-  const CARD_WIDTH = 320;
-  const CARD_GAP = 32;
+  // Responsive configuration
+  function getConfig() {
+    const vw = window.innerWidth;
+    if (vw <= 400) return { cardWidth: 220, gap: 16, adjScale: 0.78, farScale: 0.7 };
+    if (vw <= 640) return { cardWidth: 240, gap: 20, adjScale: 0.8, farScale: 0.72 };
+    if (vw <= 960) return { cardWidth: 260, gap: 24, adjScale: 0.82, farScale: 0.74 };
+    return { cardWidth: 320, gap: 32, adjScale: 0.82, farScale: 0.75 };
+  }
+
   const ACTIVE_SCALE = 1.0;
-  const ADJACENT_SCALE = 0.82;
-  const FAR_SCALE = 0.75;
   const DURATION = 0.6;
   const EASE = 'power3.inOut';
 
@@ -120,18 +124,19 @@ function initCarousel() {
   // Position all cards based on the active index
   function layoutCards(animate = true) {
     const dur = animate ? DURATION : 0;
+    const cfg = getConfig();
 
     cards.forEach((card, i) => {
       const offset = i - activeIndex;
       const absOffset = Math.abs(offset);
 
       // Calculate x position: each card offset by card width + gap
-      const x = offset * (CARD_WIDTH + CARD_GAP);
+      const x = offset * (cfg.cardWidth + cfg.gap);
 
-      // Scale: active = 1.0, adjacent = 0.82, further = 0.75
-      let scale = FAR_SCALE;
+      // Scale: active = 1.0, adjacent = responsive, further = responsive
+      let scale = cfg.farScale;
       if (absOffset === 0) scale = ACTIVE_SCALE;
-      else if (absOffset === 1) scale = ADJACENT_SCALE;
+      else if (absOffset === 1) scale = cfg.adjScale;
 
       // Z-index: active on top, adjacent next, others behind
       const zIndex = absOffset === 0 ? 15 : Math.max(1, 10 - absOffset);
@@ -211,6 +216,13 @@ function initCarousel() {
   track.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') goTo(activeIndex - 1);
     if (e.key === 'ArrowRight') goTo(activeIndex + 1);
+  });
+
+  // Recalculate layout on resize
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => layoutCards(false), 150);
   });
 
   // Touch/swipe support

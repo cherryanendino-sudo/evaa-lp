@@ -384,7 +384,33 @@ form:invalid .btn-primary { opacity: 0.8; }
 .btn-carousel-action:hover { background: var(--navy); color: var(--white); }
 
 @media (max-width: 960px) {
-    .carousel-btn-wrapper { display: none; }
-    .carousel-track { height: 580px; }
-    .carousel-card { width: 280px; height: 500px; }
+    .programs-section { padding: 60px 0 80px; }
+    .carousel-track { height: 540px; }
+    .carousel-card { width: 260px; height: 480px; }
+    .card-title { font-size: 28px; }
+    .card-desc { font-size: 11px; }
+    .carousel-btn-wrapper { width: 320px; bottom: 10px; }
+}
+
+@media (max-width: 640px) {
+    .programs-section { padding: 48px 0 70px; }
+    .carousel-track { height: 500px; }
+    .carousel-card { width: 240px; height: 440px; }
+    .card-top { padding: 20px 16px 0; }
+    .card-content { padding: 0 16px 20px; }
+    .card-title { font-size: 24px; }
+    .card-pretitle { font-size: 10px; }
+    .card-subtitle { font-size: 9px; }
+    .card-desc { font-size: 10px; line-height: 1.4; }
+    .card-bullets li { font-size: 11px; }
+    .card-ribbon { width: 36px; height: 56px; right: 16px; }
+    .carousel-btn-wrapper { width: 280px; bottom: 5px; }
+    .btn-carousel-action { width: 38px; height: 38px; font-size: 16px; }
+}
+
+@media (max-width: 400px) {
+    .carousel-track { height: 460px; }
+    .carousel-card { width: 220px; height: 400px; }
+    .card-title { font-size: 22px; }
+    .carousel-btn-wrapper { width: 260px; }
 }
