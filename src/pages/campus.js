@@ -1,63 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus & Boarding | East Visayan Adventist Academy</title>
-    <meta name="description" content="Discover life on the hill at EVAA. Explore our peaceful campus, boarding facilities, and deep community in Academy Heights, Leyte.">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+export const title = 'Campus & Boarding | East Visayan Adventist Academy';
+export const description = 'Discover life on the hill at EVAA. Explore our peaceful campus, boarding facilities, and deep community in Academy Heights, Leyte.';
 
-    <!-- Shared Topbar -->
-    <div class="topbar">
-        <div class="container topbar-container">
-            <div class="topbar-left">
-                📞 +63 935 835 7254 &nbsp;&nbsp; ✉ info@evaa.edu.ph
-            </div>
-            <div class="topbar-right">
-                <a href="#">Student Portal</a> | 
-                <a href="#">Faculty</a> | 
-                <a href="alumni.html">Alumni</a> | 
-                <a href="https://facebook.com/eastvisayanadventistacademyofleyte" target="_blank" rel="noopener">Facebook ↗</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Shared Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-brand">
-                <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                    <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                    <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                    <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                </svg>
-                <div class="nav-brand-text">
-                    <span class="nav-brand-large">EVAA</span>
-                    <span class="nav-brand-small">East Visayan Adventist Academy</span>
-                </div>
-            </a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="academics.html">Academics</a>
-                <a href="campus.html">Campus & Boarding</a>
-                <a href="spiritual-life.html">Spiritual Life</a>
-                <a href="admissions.html">Admissions</a>
-                <a href="campus-life.html">Campus Life</a>
-                <a href="contact.html">Contact</a>
-                <a href="contact.html" class="btn-primary" style="padding: 8px 16px; margin-left: 12px; border-bottom: none;">Inquire Now</a>
-            </div>
-            <button class="hamburger">☰</button>
-        </div>
-    </nav>
-
-    <main>
+export function content() {
+  return `
         <!-- Section 1: Page Hero -->
         <section class="hero-inner">
-            <div class="breadcrumb"><a href="index.html">Home</a> &gt; Campus & Boarding</div>
+            <div class="breadcrumb"><a href="/" data-link>Home</a> &gt; Campus & Boarding</div>
             <h1>Life on the Hill</h1>
             <p class="hero-subtext" style="color: rgba(255,255,255,0.8); margin-bottom: 0;">Academy Heights, Brgy. San Sotero, Javier, Leyte · ~1 hour from Tacloban City</p>
             <div style="width: 48px; height: 3px; background-color: var(--gold); margin-top: 24px;"></div>
@@ -84,9 +32,9 @@
                             
                             <div style="position: absolute; top: 15%; left: 10%; width: 25%; height: 25%; border: 1px solid var(--success); background: rgba(45, 122, 79, 0.2); display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center;">Sports<br>Area</div>
                             
-                            <div style="position: absolute; top: 10%; right: 15%; width: 35%; height: 20%; border: 1px solid white; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center;">Boys'<br>Dormitory</div>
+                            <div style="position: absolute; top: 10%; right: 15%; width: 35%; height: 20%; border: 1px solid white; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center;">Boys\'<br>Dormitory</div>
                             
-                            <div style="position: absolute; top: 40%; right: 15%; width: 35%; height: 20%; border: 1px solid white; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center;">Girls'<br>Dormitory</div>
+                            <div style="position: absolute; top: 40%; right: 15%; width: 35%; height: 20%; border: 1px solid white; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center;">Girls\'<br>Dormitory</div>
                             
                             <div style="position: absolute; top: 45%; left: 15%; width: 30%; height: 35%; border: 1px solid var(--gold); background: rgba(201, 168, 76, 0.2); display: flex; align-items: center; justify-content: center; font-size: 11px; text-align: center;">Academic<br>Building</div>
                             
@@ -134,18 +82,18 @@
                         </div>
                     </div>
                     <div class="card" style="padding: 0;">
-                        <div class="image-placeholder" style="border-radius: 12px 12px 0 0; min-height: 180px;"><span>[Photo: Boys' Dorm]</span></div>
+                        <div class="image-placeholder" style="border-radius: 12px 12px 0 0; min-height: 180px;"><span>[Photo: Boys\' Dorm]</span></div>
                         <div style="padding: 24px;">
-                            <h3 style="margin-bottom: 12px;">Boys' Dormitory</h3>
+                            <h3 style="margin-bottom: 12px;">Boys\' Dormitory</h3>
                             <p style="font-size: 14px; margin-bottom: 8px;">A highly supervised, structured housing facility for male students, managed by a dedicated Dean. It features designated study halls to ensure academic focus during evening hours.</p>
                             <p style="font-size: 14px; margin-bottom: 0;">Daily dorm worships foster brotherhood and spiritual accountability, helping young men develop into responsible, considerate, and godly leaders.</p>
                         </div>
                     </div>
                     <div class="card" style="padding: 0;">
-                        <div class="image-placeholder" style="border-radius: 12px 12px 0 0; min-height: 180px;"><span>[Photo: Girls' Dorm]</span></div>
+                        <div class="image-placeholder" style="border-radius: 12px 12px 0 0; min-height: 180px;"><span>[Photo: Girls\' Dorm]</span></div>
                         <div style="padding: 24px;">
-                            <h3 style="margin-bottom: 12px;">Girls' Dormitory</h3>
-                            <p style="font-size: 14px; margin-bottom: 8px;">A safe, secure, and nurturing home for female boarders. Under the careful guidance of the Dean of Girls, the dormitory operates on a schedule identical to the boys' dorm to maintain campus consistency.</p>
+                            <h3 style="margin-bottom: 12px;">Girls\' Dormitory</h3>
+                            <p style="font-size: 14px; margin-bottom: 8px;">A safe, secure, and nurturing home for female boarders. Under the careful guidance of the Dean of Girls, the dormitory operates on a schedule identical to the boys\' dorm to maintain campus consistency.</p>
                             <p style="font-size: 14px; margin-bottom: 0;">It acts as a sisterhood where young women learn grace, cooperation, personal responsibility, and mutual support through shared living and evening devotionals.</p>
                         </div>
                     </div>
@@ -154,7 +102,7 @@
                         <div style="padding: 24px;">
                             <h3 style="margin-bottom: 12px;">Sports & Recreation Area</h3>
                             <p style="font-size: 14px; margin-bottom: 8px;">Recognizing that physical fitness is crucial to holistic education, our sports area provides ample space for team sports, intramural games, and general recreation.</p>
-                            <p style="font-size: 14px; margin-bottom: 0;">Whether it's basketball, volleyball, or simple afternoon exercises, these facilities encourage teamwork, fair play, and the constructive release of youthful energy.</p>
+                            <p style="font-size: 14px; margin-bottom: 0;">Whether it\'s basketball, volleyball, or simple afternoon exercises, these facilities encourage teamwork, fair play, and the constructive release of youthful energy.</p>
                         </div>
                     </div>
                 </div>
@@ -180,7 +128,7 @@
                     
                     <div class="card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white;">
                         <h3 style="color: var(--gold); margin-bottom: 16px;">2. Independence & Responsibility</h3>
-                        <p style="font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 0;">Living away from parents accelerates a student's maturity. Boarders learn essential, practical life skills such as doing their own laundry, ironing their uniforms, keeping their rooms immaculate, and managing their personal weekly allowances. These experiences build strong, independent young adults prepared for university life.</p>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.8); margin-bottom: 0;">Living away from parents accelerates a student\'s maturity. Boarders learn essential, practical life skills such as doing their own laundry, ironing their uniforms, keeping their rooms immaculate, and managing their personal weekly allowances. These experiences build strong, independent young adults prepared for university life.</p>
                     </div>
 
                     <div class="card" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: white;">
@@ -237,60 +185,5 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <!-- Shared Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-brand">
-                        <svg viewBox="0 0 100 120" style="width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                            <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                            <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                            <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                        </svg>
-                        East Visayan Adventist Academy
-                    </div>
-                    <div class="footer-motto">The Guardian of Truth</div>
-                    <p style="opacity: 0.8; font-size: 14px; margin-bottom: 16px; max-width: 300px;">Preparing young people to live lives of usefulness and service, reflecting the character of Christ.</p>
-                    <a href="https://facebook.com/eastvisayanadventistacademyofleyte" style="color: var(--gold);">Facebook Page ↗</a>
-                </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="academics.html">Academics</a>
-                        <a href="campus.html">Campus & Boarding</a>
-                        <a href="spiritual-life.html">Spiritual Life</a>
-                        <a href="admissions.html">Admissions</a>
-                        <a href="campus-life.html">Campus Life</a>
-                        <a href="alumni.html">Alumni</a>
-                    </div>
-                </div>
-                <div>
-                    <h4>Contact & Affiliation</h4>
-                    <ul class="list-unstyled" style="font-size: 14px; opacity: 0.8; display: flex; flex-direction: column; gap: 8px;">
-                        <li>Academy Heights, Brgy. San Sotero,<br>Javier, Leyte 6511, Philippines</li>
-                        <li>P.O. Box 241, 6500 Tacloban City</li>
-                        <li>+63 935 835 7254</li>
-                        <li style="margin-top: 12px; color: var(--gold);">DepEd Region VIII Recognized</li>
-                        <li style="font-size: 12px; opacity: 0.7;">East Visayan Conference · Central Philippine Union Conference · Southern Asia-Pacific Division</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>&copy; 2025 East Visayan Adventist Academy of Leyte, Inc. · All Rights Reserved</span>
-                <div style="display: flex; gap: 16px;">
-                    <span>DepEd Recognized</span>
-                    <a href="#">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="module" src="/src/main.js"></script>
-</body>
-</html>
+  `;
+}

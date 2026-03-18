@@ -1,63 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About EVAA | East Visayan Adventist Academy</title>
-    <meta name="description" content="Learn about East Visayan Adventist Academy's history, mission, vision, and core administration.">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+export const title = 'About EVAA | East Visayan Adventist Academy';
+export const description = 'Learn about East Visayan Adventist Academy history, mission, vision, and core administration.';
 
-    <!-- Shared Topbar -->
-    <div class="topbar">
-        <div class="container topbar-container">
-            <div class="topbar-left">
-                📞 +63 935 835 7254 &nbsp;&nbsp; ✉ info@evaa.edu.ph
-            </div>
-            <div class="topbar-right">
-                <a href="#">Student Portal</a> | 
-                <a href="#">Faculty</a> | 
-                <a href="alumni.html">Alumni</a> | 
-                <a href="https://facebook.com/eastvisayanadventistacademyofleyte" target="_blank" rel="noopener">Facebook ↗</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Shared Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-brand">
-                <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                    <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                    <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                    <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                </svg>
-                <div class="nav-brand-text">
-                    <span class="nav-brand-large">EVAA</span>
-                    <span class="nav-brand-small">East Visayan Adventist Academy</span>
-                </div>
-            </a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="academics.html">Academics</a>
-                <a href="campus.html">Campus & Boarding</a>
-                <a href="spiritual-life.html">Spiritual Life</a>
-                <a href="admissions.html">Admissions</a>
-                <a href="campus-life.html">Campus Life</a>
-                <a href="contact.html">Contact</a>
-                <a href="contact.html" class="btn-primary" style="padding: 8px 16px; margin-left: 12px; border-bottom: none;">Inquire Now</a>
-            </div>
-            <button class="hamburger">☰</button>
-        </div>
-    </nav>
-
-    <main>
+export function content() {
+  return `
         <!-- Section 1: Page Hero -->
         <section class="hero-inner">
-            <div class="breadcrumb"><a href="index.html">Home</a> &gt; About</div>
+            <div class="breadcrumb"><a href="/" data-link>Home</a> &gt; About</div>
             <h1>About East Visayan Adventist Academy</h1>
             <p class="hero-subtext" style="color: rgba(255,255,255,0.8); margin-bottom: 0;">Est. 1992 · Academy Heights, Javier, Leyte · The Guardian of Truth</p>
             <div style="width: 48px; height: 3px; background-color: var(--gold); margin-top: 24px;"></div>
@@ -72,8 +20,8 @@
                         <h2 class="section-title">A Legacy of Service and Truth</h2>
                         <div class="title-rule left"></div>
                         <p class="drop-cap">Founded in 1992 under the auspices of the East Visayan Conference of Seventh-day Adventists, East Visayan Adventist Academy (EVAA) began with a clear and resolute purpose: to provide Christ-centered secondary education for the dedicated families of Region VIII.</p>
-                        <p>Our pioneers chose a quiet, elevated location in Barangay San Sotero, Javier, Leyte—a site that eventually became affectionately known as "Academy Heights." This peaceful hilltop campus was intentionally selected to offer students a safe haven away from urban distractions, where they could focus entirely on their intellectual, physical, and spiritual development amid the beauty of God's creation.</p>
-                        <p>Through the decades, EVAA's student body has grown remarkably. While our roots remain in the immediate Leyte region, our doors have welcomed students from Tacloban City, Ormoc City, and far beyond Eastern Visayas. Families recognize EVAA as a place where rigorous learning is inextricably bound with unwavering moral instruction.</p>
+                        <p>Our pioneers chose a quiet, elevated location in Barangay San Sotero, Javier, Leyte—a site that eventually became affectionately known as "Academy Heights." This peaceful hilltop campus was intentionally selected to offer students a safe haven away from urban distractions, where they could focus entirely on their intellectual, physical, and spiritual development amid the beauty of God\'s creation.</p>
+                        <p>Through the decades, EVAA\'s student body has grown remarkably. While our roots remain in the immediate Leyte region, our doors have welcomed students from Tacloban City, Ormoc City, and far beyond Eastern Visayas. Families recognize EVAA as a place where rigorous learning is inextricably bound with unwavering moral instruction.</p>
                         <p>From the beginning, the moniker "Guardian of Truth" has been central to our identity. This motto is not merely a slogan; it reflects a solemn mission to uphold biblical principles while engaging with an ever-changing world. Our alumni serve as living testaments to this ethos, entering fields of medicine, education, theology, and public service equipped with a faith that stands firm in adversity.</p>
                         <p>Today, EVAA joyfully continues to serve Grades 7 through 12. Endorsed by the Seventh-day Adventist educational framework and overseen by the Department of Education (DepEd), our institution looks forward to a future of continued academic excellence, steadfast faith, and transformational leadership in the Visayas.</p>
                     </div>
@@ -93,7 +41,7 @@
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-year">2020</div>
-                                <p style="font-size: 14px; margin: 0;">DepEd Provisional Compliance Certificate (No. PCALM-LEY-404686-199 s. 2020) issued, formally recognizing EVAA's commitment to government standards.</p>
+                                <p style="font-size: 14px; margin: 0;">DepEd Provisional Compliance Certificate (No. PCALM-LEY-404686-199 s. 2020) issued, formally recognizing EVAA\'s commitment to government standards.</p>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-year">Present</div>
@@ -118,7 +66,7 @@
                         <h3 style="font-family: var(--font-display); font-size: 24px; color: var(--navy); margin-bottom: 24px; font-weight: 700;">Our Mission</h3>
                         <p class="italic-serif" style="color: var(--navy); font-size: 18px; line-height: 1.6;">East Visayan Adventist Academy prepares young people to live lives of usefulness and service, reflecting the character of Christ in all they do and witnessing to the reality of a living God.</p>
                         <hr style="border: 0; height: 1px; background: var(--border); margin: 24px 0;">
-                        <p style="font-size: 15px; color: var(--text-body);">We believe that true education goes beyond merely preparing youth for a career; it prepares them for a lifetime of selfless giving. By instilling a Christ-like character, we mold students to act as effective witnesses in their hometowns and workplaces. Our mission holds that genuine success is measured by one's commitment to serving humanity in the name of the Lord.</p>
+                        <p style="font-size: 15px; color: var(--text-body);">We believe that true education goes beyond merely preparing youth for a career; it prepares them for a lifetime of selfless giving. By instilling a Christ-like character, we mold students to act as effective witnesses in their hometowns and workplaces. Our mission holds that genuine success is measured by one\'s commitment to serving humanity in the name of the Lord.</p>
                     </div>
 
                     <div class="numbered-block">
@@ -243,60 +191,5 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <!-- Shared Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-brand">
-                        <svg viewBox="0 0 100 120" style="width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                            <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                            <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                            <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                        </svg>
-                        East Visayan Adventist Academy
-                    </div>
-                    <div class="footer-motto">The Guardian of Truth</div>
-                    <p style="opacity: 0.8; font-size: 14px; margin-bottom: 16px; max-width: 300px;">Preparing young people to live lives of usefulness and service, reflecting the character of Christ.</p>
-                    <a href="https://facebook.com/eastvisayanadventistacademyofleyte" style="color: var(--gold);">Facebook Page ↗</a>
-                </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="academics.html">Academics</a>
-                        <a href="campus.html">Campus & Boarding</a>
-                        <a href="spiritual-life.html">Spiritual Life</a>
-                        <a href="admissions.html">Admissions</a>
-                        <a href="campus-life.html">Campus Life</a>
-                        <a href="alumni.html">Alumni</a>
-                    </div>
-                </div>
-                <div>
-                    <h4>Contact & Affiliation</h4>
-                    <ul class="list-unstyled" style="font-size: 14px; opacity: 0.8; display: flex; flex-direction: column; gap: 8px;">
-                        <li>Academy Heights, Brgy. San Sotero,<br>Javier, Leyte 6511, Philippines</li>
-                        <li>P.O. Box 241, 6500 Tacloban City</li>
-                        <li>+63 935 835 7254</li>
-                        <li style="margin-top: 12px; color: var(--gold);">DepEd Region VIII Recognized</li>
-                        <li style="font-size: 12px; opacity: 0.7;">East Visayan Conference · Central Philippine Union Conference · Southern Asia-Pacific Division</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>&copy; 2025 East Visayan Adventist Academy of Leyte, Inc. · All Rights Reserved</span>
-                <div style="display: flex; gap: 16px;">
-                    <span>DepEd Recognized</span>
-                    <a href="#">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="module" src="/src/main.js"></script>
-</body>
-</html>
+  `;
+}

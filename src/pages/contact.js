@@ -1,63 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | East Visayan Adventist Academy</title>
-    <meta name="description" content="Reach out to EVAA. Get our contact information, mailing address, directions to Academy Heights, and send us a message.">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+export const title = 'Contact Us | East Visayan Adventist Academy';
+export const description = 'Reach out to EVAA. Get our contact information, mailing address, directions to Academy Heights, and send us a message.';
 
-    <!-- Shared Topbar -->
-    <div class="topbar">
-        <div class="container topbar-container">
-            <div class="topbar-left">
-                📞 +63 935 835 7254 &nbsp;&nbsp; ✉ info@evaa.edu.ph
-            </div>
-            <div class="topbar-right">
-                <a href="#">Student Portal</a> | 
-                <a href="#">Faculty</a> | 
-                <a href="alumni.html">Alumni</a> | 
-                <a href="https://facebook.com/eastvisayanadventistacademyofleyte" target="_blank" rel="noopener">Facebook ↗</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Shared Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-brand">
-                <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                    <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                    <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                    <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                </svg>
-                <div class="nav-brand-text">
-                    <span class="nav-brand-large">EVAA</span>
-                    <span class="nav-brand-small">East Visayan Adventist Academy</span>
-                </div>
-            </a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="academics.html">Academics</a>
-                <a href="campus.html">Campus & Boarding</a>
-                <a href="spiritual-life.html">Spiritual Life</a>
-                <a href="admissions.html">Admissions</a>
-                <a href="campus-life.html">Campus Life</a>
-                <a href="contact.html" class="active">Contact</a>
-                <a href="contact.html" class="btn-primary" style="padding: 8px 16px; margin-left: 12px; border-bottom: none;">Inquire Now</a>
-            </div>
-            <button class="hamburger">☰</button>
-        </div>
-    </nav>
-
-    <main>
+export function content() {
+  return `
         <!-- Section 1: Page Hero (Slim) -->
         <section class="hero-inner" style="padding: 60px 0;">
-            <div class="breadcrumb"><a href="index.html">Home</a> &gt; Contact Us</div>
+            <div class="breadcrumb"><a href="/" data-link>Home</a> &gt; Contact Us</div>
             <h1 style="color: var(--gold); margin-bottom: 0;">Get in Touch</h1>
         </section>
 
@@ -65,8 +13,8 @@
         <section class="bg-white" style="padding-top: 64px;">
             <div class="container grid grid-2 gap-40 align-items-center">
                 <div>
-                    <h2 class="section-title">We'd love to hear from you.</h2>
-                    <p style="color: var(--text-body); margin-bottom: 32px;">Whether you have questions about admissions, want to schedule a campus tour, or need to reach a specific office, please don't hesitate to reach out.</p>
+                    <h2 class="section-title">We\'d love to hear from you.</h2>
+                    <p style="color: var(--text-body); margin-bottom: 32px;">Whether you have questions about admissions, want to schedule a campus tour, or need to reach a specific office, please don\'t hesitate to reach out.</p>
                     
                     <div style="display: flex; gap: 16px; margin-bottom: 24px;">
                         <div class="icon-circle" style="width: 48px; height: 48px; background: var(--gold-pale); flex-shrink: 0;"><span style="font-size: 20px;">📍</span></div>
@@ -119,7 +67,7 @@
                 <h2 class="section-title">Online Inquiry Form</h2>
                 <div class="title-rule"></div>
                 
-                <p style="margin: 24px auto 40px; max-width: 600px; color: var(--text-body);">Kindly fill out the form below. For student admissions, please use the detailed application form on our <a href="admissions.html" style="color: var(--gold);">Admissions page</a>.</p>
+                <p style="margin: 24px auto 40px; max-width: 600px; color: var(--text-body);">Kindly fill out the form below. For student admissions, please use the detailed application form on our <a href="/admissions" data-link style="color: var(--gold);">Admissions page</a>.</p>
 
                 <div style="background: white; padding: 40px; border-radius: 12px; max-width: 700px; margin: 0 auto; box-shadow: var(--shadow-hover); text-align: left; border-top: 4px solid var(--gold);">
                     <form action="#" method="POST">
@@ -146,7 +94,7 @@
                                     <option value="General Inquiry">General Inquiry</option>
                                     <option value="Registrar/Records">Registrar / Student Records</option>
                                     <option value="Treasury/Billing">Treasury / Billing</option>
-                                    <option value="Principal/Office">Principal's Office</option>
+                                    <option value="Principal/Office">Principal\'s Office</option>
                                     <option value="Alumni Affairs">Alumni Affairs</option>
                                 </select>
                             </div>
@@ -162,61 +110,5 @@
                 </div>
             </div>
         </section>
-
-    </main>
-
-    <!-- Shared Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-brand">
-                        <svg viewBox="0 0 100 120" style="width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                            <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                            <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                            <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                        </svg>
-                        East Visayan Adventist Academy
-                    </div>
-                    <div class="footer-motto">The Guardian of Truth</div>
-                    <p style="opacity: 0.8; font-size: 14px; margin-bottom: 16px; max-width: 300px;">Preparing young people to live lives of usefulness and service, reflecting the character of Christ.</p>
-                    <a href="https://facebook.com/eastvisayanadventistacademyofleyte" style="color: var(--gold);">Facebook Page ↗</a>
-                </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="academics.html">Academics</a>
-                        <a href="campus.html">Campus & Boarding</a>
-                        <a href="spiritual-life.html">Spiritual Life</a>
-                        <a href="admissions.html">Admissions</a>
-                        <a href="campus-life.html">Campus Life</a>
-                        <a href="alumni.html">Alumni</a>
-                    </div>
-                </div>
-                <div>
-                    <h4>Contact & Affiliation</h4>
-                    <ul class="list-unstyled" style="font-size: 14px; opacity: 0.8; display: flex; flex-direction: column; gap: 8px;">
-                        <li>Academy Heights, Brgy. San Sotero,<br>Javier, Leyte 6511, Philippines</li>
-                        <li>P.O. Box 241, 6500 Tacloban City</li>
-                        <li>+63 935 835 7254</li>
-                        <li style="margin-top: 12px; color: var(--gold);">DepEd Region VIII Recognized</li>
-                        <li style="font-size: 12px; opacity: 0.7;">East Visayan Conference · Central Philippine Union Conference · Southern Asia-Pacific Division</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>&copy; 2025 East Visayan Adventist Academy of Leyte, Inc. · All Rights Reserved</span>
-                <div style="display: flex; gap: 16px;">
-                    <span>DepEd Recognized</span>
-                    <a href="#">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="module" src="/src/main.js"></script>
-</body>
-</html>
+  `;
+}

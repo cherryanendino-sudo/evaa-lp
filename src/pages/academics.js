@@ -1,63 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academics | East Visayan Adventist Academy</title>
-    <meta name="description" content="Explore our DepEd-recognized Junior and Senior High School curriculum, integrating Seventh-day Adventist faith and values.">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+export const title = 'Academics | East Visayan Adventist Academy';
+export const description = 'Explore our DepEd-recognized Junior and Senior High School curriculum, integrating Seventh-day Adventist faith and values.';
 
-    <!-- Shared Topbar -->
-    <div class="topbar">
-        <div class="container topbar-container">
-            <div class="topbar-left">
-                📞 +63 935 835 7254 &nbsp;&nbsp; ✉ info@evaa.edu.ph
-            </div>
-            <div class="topbar-right">
-                <a href="#">Student Portal</a> | 
-                <a href="#">Faculty</a> | 
-                <a href="alumni.html">Alumni</a> | 
-                <a href="https://facebook.com/eastvisayanadventistacademyofleyte" target="_blank" rel="noopener">Facebook ↗</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Shared Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-brand">
-                <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                    <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                    <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                    <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                </svg>
-                <div class="nav-brand-text">
-                    <span class="nav-brand-large">EVAA</span>
-                    <span class="nav-brand-small">East Visayan Adventist Academy</span>
-                </div>
-            </a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="academics.html">Academics</a>
-                <a href="campus.html">Campus & Boarding</a>
-                <a href="spiritual-life.html">Spiritual Life</a>
-                <a href="admissions.html">Admissions</a>
-                <a href="campus-life.html">Campus Life</a>
-                <a href="contact.html">Contact</a>
-                <a href="contact.html" class="btn-primary" style="padding: 8px 16px; margin-left: 12px; border-bottom: none;">Inquire Now</a>
-            </div>
-            <button class="hamburger">☰</button>
-        </div>
-    </nav>
-
-    <main>
+export function content() {
+  return `
         <!-- Section 1: Page Hero -->
         <section class="hero-inner">
-            <div class="breadcrumb"><a href="index.html">Home</a> &gt; Academics</div>
+            <div class="breadcrumb"><a href="/" data-link>Home</a> &gt; Academics</div>
             <h1>Academic Excellence in a Christ-Centered Framework</h1>
             <p class="hero-subtext" style="color: rgba(255,255,255,0.8); margin-bottom: 0;">DepEd-Recognized · SDA Educational Philosophy · Grades 7–12</p>
             <div style="width: 48px; height: 3px; background-color: var(--gold); margin-top: 24px;"></div>
@@ -71,7 +19,7 @@
                     <h2 class="section-title">Integrating Faith and Learning</h2>
                     <div class="title-rule left"></div>
                     <p>At EVAA, the pursuit of academic excellence and the development of Christian character are inextricably linked. Our curriculum is fully compliant with the core requirements mandated by the Department of Education (DepEd), ensuring our students meet national standards in all subject areas. However, we go further by viewing every academic discipline through the lens of our Adventist faith.</p>
-                    <p>Whether in Science, discovering the intricate design of the Creator, or in History, tracing the providential hand of God through the ages, every class is an opportunity to deepen spiritual understanding. Utilizing both English and Filipino as languages of instruction, we foster critical thinking, effective communication, and a sincere readiness to serve the community, preparing students not just for college, but for life's broader calling.</p>
+                    <p>Whether in Science, discovering the intricate design of the Creator, or in History, tracing the providential hand of God through the ages, every class is an opportunity to deepen spiritual understanding. Utilizing both English and Filipino as languages of instruction, we foster critical thinking, effective communication, and a sincere readiness to serve the community, preparing students not just for college, but for life\'s broader calling.</p>
                 </div>
                 <div>
                     <div class="pull-quote">
@@ -185,7 +133,7 @@
                     <div>
                         <svg viewBox="0 0 24 24" style="width: 32px; height: 32px; fill: var(--gold); margin-bottom: 16px;"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.1L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
                         <h3 class="text-white">Practical Life Skills</h3>
-                        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Known as 'Work Education', we believe manual labor builds character. Students participate in campus upkeep, gardening, and technical skills that promote dignity in labor and self-reliance.</p>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Known as \'Work Education\', we believe manual labor builds character. Students participate in campus upkeep, gardening, and technical skills that promote dignity in labor and self-reliance.</p>
                     </div>
                     <div>
                         <svg viewBox="0 0 24 24" style="width: 32px; height: 32px; fill: var(--gold); margin-bottom: 16px;"><path d="M21 10h-8V2h8v8zm-2-6h-4v4h4V4zm-9 6H2V2h8v8zm-2-6H4v4h4V4zm13 14h-8v-8h8v8zm-2-6h-4v4h4v-4zm-9 6H2v-8h8v8zm-2-6H4v4h4v-4z"/></svg> <!-- Placeholder for calendar/worship -->
@@ -204,7 +152,7 @@
                         <div class="section-label">Important Dates</div>
                         <h2 class="section-title">Academic Calendar Preview</h2>
                         <div class="title-rule left"></div>
-                        <p>Our academic calendar is thoughtfully structured to balance intense instructional periods with necessary breaks, spiritual emphasis weeks, and community-building events. It precisely aligns with the Department of Education's regional calendar for Eastern Visayas.</p>
+                        <p>Our academic calendar is thoughtfully structured to balance intense instructional periods with necessary breaks, spiritual emphasis weeks, and community-building events. It precisely aligns with the Department of Education\'s regional calendar for Eastern Visayas.</p>
                         <p style="font-size: 13px; color: var(--gold); font-style: italic;">* Exact dates are subject to the official DepEd Regional Calendar. Please continually check with the Registrar for the most current schedule specific to the academic year.</p>
                     </div>
                     <div>
@@ -287,65 +235,10 @@
                     <div class="card text-center">
                         <div class="icon-circle mx-auto"><svg viewBox="0 0 24 24"><path d="M9.17 6l2 2H20v10H4V6h5.17M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/></svg></div>
                         <h3 style="font-size: 16px;">Science & Math Clubs</h3>
-                        <p style="font-size: 14px; margin-bottom: 0;">Encouraging analytical minds to explore complex problems, participate in regional Olympiads, and discover the mathematical order of God's universe.</p>
+                        <p style="font-size: 14px; margin-bottom: 0;">Encouraging analytical minds to explore complex problems, participate in regional Olympiads, and discover the mathematical order of God\'s universe.</p>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-
-    <!-- Shared Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-brand">
-                        <svg viewBox="0 0 100 120" style="width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                            <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                            <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                            <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                        </svg>
-                        East Visayan Adventist Academy
-                    </div>
-                    <div class="footer-motto">The Guardian of Truth</div>
-                    <p style="opacity: 0.8; font-size: 14px; margin-bottom: 16px; max-width: 300px;">Preparing young people to live lives of usefulness and service, reflecting the character of Christ.</p>
-                    <a href="https://facebook.com/eastvisayanadventistacademyofleyte" style="color: var(--gold);">Facebook Page ↗</a>
-                </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="academics.html">Academics</a>
-                        <a href="campus.html">Campus & Boarding</a>
-                        <a href="spiritual-life.html">Spiritual Life</a>
-                        <a href="admissions.html">Admissions</a>
-                        <a href="campus-life.html">Campus Life</a>
-                        <a href="alumni.html">Alumni</a>
-                    </div>
-                </div>
-                <div>
-                    <h4>Contact & Affiliation</h4>
-                    <ul class="list-unstyled" style="font-size: 14px; opacity: 0.8; display: flex; flex-direction: column; gap: 8px;">
-                        <li>Academy Heights, Brgy. San Sotero,<br>Javier, Leyte 6511, Philippines</li>
-                        <li>P.O. Box 241, 6500 Tacloban City</li>
-                        <li>+63 935 835 7254</li>
-                        <li style="margin-top: 12px; color: var(--gold);">DepEd Region VIII Recognized</li>
-                        <li style="font-size: 12px; opacity: 0.7;">East Visayan Conference · Central Philippine Union Conference · Southern Asia-Pacific Division</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>&copy; 2025 East Visayan Adventist Academy of Leyte, Inc. · All Rights Reserved</span>
-                <div style="display: flex; gap: 16px;">
-                    <span>DepEd Recognized</span>
-                    <a href="#">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="module" src="/src/main.js"></script>
-</body>
-</html>
+  `;
+}

@@ -1,63 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Life & Events | East Visayan Adventist Academy</title>
-    <meta name="description" content="Discover the vibrant events, organizations, and traditions that make life at EVAA truly memorable.">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+export const title = 'Campus Life & Events | East Visayan Adventist Academy';
+export const description = 'Discover the vibrant events, organizations, and traditions that make life at EVAA truly memorable.';
 
-    <!-- Shared Topbar -->
-    <div class="topbar">
-        <div class="container topbar-container">
-            <div class="topbar-left">
-                📞 +63 935 835 7254 &nbsp;&nbsp; ✉ info@evaa.edu.ph
-            </div>
-            <div class="topbar-right">
-                <a href="#">Student Portal</a> | 
-                <a href="#">Faculty</a> | 
-                <a href="alumni.html">Alumni</a> | 
-                <a href="https://facebook.com/eastvisayanadventistacademyofleyte" target="_blank" rel="noopener">Facebook ↗</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Shared Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-brand">
-                <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                    <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                    <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                    <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                </svg>
-                <div class="nav-brand-text">
-                    <span class="nav-brand-large">EVAA</span>
-                    <span class="nav-brand-small">East Visayan Adventist Academy</span>
-                </div>
-            </a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="academics.html">Academics</a>
-                <a href="campus.html">Campus & Boarding</a>
-                <a href="spiritual-life.html">Spiritual Life</a>
-                <a href="admissions.html">Admissions</a>
-                <a href="campus-life.html" class="active">Campus Life</a>
-                <a href="contact.html">Contact</a>
-                <a href="contact.html" class="btn-primary" style="padding: 8px 16px; margin-left: 12px; border-bottom: none;">Inquire Now</a>
-            </div>
-            <button class="hamburger">☰</button>
-        </div>
-    </nav>
-
-    <main>
+export function content() {
+  return `
         <!-- Section 1: Page Hero -->
         <section class="hero-inner">
-            <div class="breadcrumb"><a href="index.html">Home</a> &gt; Campus Life & Events</div>
+            <div class="breadcrumb"><a href="/" data-link>Home</a> &gt; Campus Life & Events</div>
             <h1>Life at EVAA</h1>
             <p class="hero-subtext" style="color: rgba(255,255,255,0.8); margin-bottom: 0;">Faith, Learning, and Community</p>
             <div style="width: 48px; height: 3px; background-color: var(--gold); margin-top: 24px;"></div>
@@ -110,32 +58,32 @@
                     <div class="card" style="border-top: 3px solid var(--gold);">
                         <h4 style="margin-bottom: 8px; color: var(--navy);">Supreme Student Government (SSG)</h4>
                         <p style="font-size: 13px; margin-bottom: 12px; color: var(--text-body);">The primary governing voice for the student body, teaching leadership and policy-making.</p>
-                        <a href="academics.html" style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
+                        <a href="/academics" data-link style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
                     </div>
                     <div class="card" style="border-top: 3px solid var(--gold);">
                         <h4 style="margin-bottom: 8px; color: var(--navy);">School Band</h4>
                         <p style="font-size: 13px; margin-bottom: 12px; color: var(--text-body);">Developing musical abilities and performing faithfully at school and inter-school events.</p>
-                        <a href="academics.html" style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
+                        <a href="/academics" data-link style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
                     </div>
                     <div class="card" style="border-top: 3px solid var(--gold);">
                         <h4 style="margin-bottom: 8px; color: var(--navy);">Fancy Drill / Color Guard</h4>
                         <p style="font-size: 13px; margin-bottom: 12px; color: var(--text-body);">Executing complex military-style marching maneuvers demanding immense precision.</p>
-                        <a href="academics.html" style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
+                        <a href="/academics" data-link style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
                     </div>
                     <div class="card" style="border-top: 3px solid var(--gold);">
                         <h4 style="margin-bottom: 8px; color: var(--navy);">Pathfinder Club</h4>
-                        <p style="font-size: 13px; margin-bottom: 12px; color: var(--text-body);">The SDA church's premier scouting organization focusing on outdoor survival and faith.</p>
-                        <a href="spiritual-life.html" style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
+                        <p style="font-size: 13px; margin-bottom: 12px; color: var(--text-body);">The SDA church\'s premier scouting organization focusing on outdoor survival and faith.</p>
+                        <a href="/spiritual-life" data-link style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
                     </div>
                     <div class="card" style="border-top: 3px solid var(--gold);">
                         <h4 style="margin-bottom: 8px; color: var(--navy);">Student Ministerial Association</h4>
                         <p style="font-size: 13px; margin-bottom: 12px; color: var(--text-body);">For youth passionate about pastoral leadership, organizing campus ministries.</p>
-                        <a href="spiritual-life.html" style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
+                        <a href="/spiritual-life" data-link style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
                     </div>
                     <div class="card" style="border-top: 3px solid var(--gold);">
                         <h4 style="margin-bottom: 8px; color: var(--navy);">Academic Clubs</h4>
                         <p style="font-size: 13px; margin-bottom: 12px; color: var(--text-body);">Including Science, Math, and Literature groups that participate in regional Olympiads.</p>
-                        <a href="academics.html" style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
+                        <a href="/academics" data-link style="font-size: 13px; font-weight: 600; color: var(--gold);">Learn More &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -214,7 +162,7 @@
         <!-- Section 6: Campus Life Testimonials -->
         <section class="bg-cream">
             <div class="container text-center">
-                <h2 class="section-title">What They're Saying</h2>
+                <h2 class="section-title">What They\'re Saying</h2>
                 <div class="title-rule"></div>
 
                 <div class="grid grid-3 mt-32 text-left">
@@ -226,7 +174,7 @@
                                 <div style="font-size: 12px; color: var(--text-muted);">Grade 11 Student</div>
                             </div>
                         </div>
-                        <p style="font-size: 14px; font-style: italic; color: var(--text-body); flex-grow: 1;">"Living in the dorms was intimidating at first, but it quickly became my favorite part of EVAA. We do our chores together, study together, and pray together. I've made brothers here that I know I will have for the rest of my life."</p>
+                        <p style="font-size: 14px; font-style: italic; color: var(--text-body); flex-grow: 1;">"Living in the dorms was intimidating at first, but it quickly became my favorite part of EVAA. We do our chores together, study together, and pray together. I\'ve made brothers here that I know I will have for the rest of my life."</p>
                         <div style="font-size: 10px; color: var(--danger); text-align: right;">[Testimonial placeholder]</div>
                     </div>
                     <div class="card" style="display: flex; flex-direction: column;">
@@ -254,61 +202,5 @@
                 </div>
             </div>
         </section>
-
-    </main>
-
-    <!-- Shared Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-brand">
-                        <svg viewBox="0 0 100 120" style="width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                            <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                            <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                            <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                        </svg>
-                        East Visayan Adventist Academy
-                    </div>
-                    <div class="footer-motto">The Guardian of Truth</div>
-                    <p style="opacity: 0.8; font-size: 14px; margin-bottom: 16px; max-width: 300px;">Preparing young people to live lives of usefulness and service, reflecting the character of Christ.</p>
-                    <a href="https://facebook.com/eastvisayanadventistacademyofleyte" style="color: var(--gold);">Facebook Page ↗</a>
-                </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="academics.html">Academics</a>
-                        <a href="campus.html">Campus & Boarding</a>
-                        <a href="spiritual-life.html">Spiritual Life</a>
-                        <a href="admissions.html">Admissions</a>
-                        <a href="campus-life.html">Campus Life</a>
-                        <a href="alumni.html">Alumni</a>
-                    </div>
-                </div>
-                <div>
-                    <h4>Contact & Affiliation</h4>
-                    <ul class="list-unstyled" style="font-size: 14px; opacity: 0.8; display: flex; flex-direction: column; gap: 8px;">
-                        <li>Academy Heights, Brgy. San Sotero,<br>Javier, Leyte 6511, Philippines</li>
-                        <li>P.O. Box 241, 6500 Tacloban City</li>
-                        <li>+63 935 835 7254</li>
-                        <li style="margin-top: 12px; color: var(--gold);">DepEd Region VIII Recognized</li>
-                        <li style="font-size: 12px; opacity: 0.7;">East Visayan Conference · Central Philippine Union Conference · Southern Asia-Pacific Division</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>&copy; 2025 East Visayan Adventist Academy of Leyte, Inc. · All Rights Reserved</span>
-                <div style="display: flex; gap: 16px;">
-                    <span>DepEd Recognized</span>
-                    <a href="#">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="module" src="/src/main.js"></script>
-</body>
-</html>
+  `;
+}

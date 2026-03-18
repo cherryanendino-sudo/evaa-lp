@@ -1,63 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spiritual Life | East Visayan Adventist Academy</title>
-    <meta name="description" content="At EVAA, spiritual growth is not a subject — it is a way of life. Learn about our daily worship, Sabbath rhythms, and faith integration.">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+export const title = 'Spiritual Life | East Visayan Adventist Academy';
+export const description = 'At EVAA, spiritual growth is not a subject — it is a way of life. Learn about our daily worship, Sabbath rhythms, and faith integration.';
 
-    <!-- Shared Topbar -->
-    <div class="topbar">
-        <div class="container topbar-container">
-            <div class="topbar-left">
-                📞 +63 935 835 7254 &nbsp;&nbsp; ✉ info@evaa.edu.ph
-            </div>
-            <div class="topbar-right">
-                <a href="#">Student Portal</a> | 
-                <a href="#">Faculty</a> | 
-                <a href="alumni.html">Alumni</a> | 
-                <a href="https://facebook.com/eastvisayanadventistacademyofleyte" target="_blank" rel="noopener">Facebook ↗</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Shared Navigation -->
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="nav-brand">
-                <svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                    <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                    <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                    <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                </svg>
-                <div class="nav-brand-text">
-                    <span class="nav-brand-large">EVAA</span>
-                    <span class="nav-brand-small">East Visayan Adventist Academy</span>
-                </div>
-            </a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="academics.html">Academics</a>
-                <a href="campus.html">Campus & Boarding</a>
-                <a href="spiritual-life.html">Spiritual Life</a>
-                <a href="admissions.html">Admissions</a>
-                <a href="campus-life.html">Campus Life</a>
-                <a href="contact.html">Contact</a>
-                <a href="contact.html" class="btn-primary" style="padding: 8px 16px; margin-left: 12px; border-bottom: none;">Inquire Now</a>
-            </div>
-            <button class="hamburger">☰</button>
-        </div>
-    </nav>
-
-    <main>
+export function content() {
+  return `
         <!-- Section 1: Page Hero -->
         <section class="hero-inner" style="background: linear-gradient(135deg, var(--navy-mid) 0%, var(--navy) 100%);">
-            <div class="breadcrumb"><a href="index.html">Home</a> &gt; Spiritual Life</div>
+            <div class="breadcrumb"><a href="/" data-link>Home</a> &gt; Spiritual Life</div>
             <h1 style="color: var(--gold);">Faith at the Heart of Everything</h1>
             <p class="hero-subtext" style="color: rgba(255,255,255,0.9); margin-bottom: 0;">At EVAA, spiritual growth is not a subject — it is a way of life.</p>
             <div style="width: 48px; height: 3px; background-color: var(--white); margin-top: 24px;"></div>
@@ -91,7 +39,7 @@
                 <div class="grid grid-3 mt-32 text-left">
                     <div class="card">
                         <h3 style="color: var(--navy); margin-bottom: 12px;">Morning Devotion</h3>
-                        <p style="font-size: 14px; margin-bottom: 0;">Each school day at EVAA begins not with textbooks, but with the Bible. Our daily community morning devotion gathers the entire student body and faculty to sing hymns, pray, and listen to a short, inspiring message to set a positive, God-centered tone for the day's challenges.</p>
+                        <p style="font-size: 14px; margin-bottom: 0;">Each school day at EVAA begins not with textbooks, but with the Bible. Our daily community morning devotion gathers the entire student body and faculty to sing hymns, pray, and listen to a short, inspiring message to set a positive, God-centered tone for the day\'s challenges.</p>
                     </div>
                     <div class="card">
                         <h3 style="color: var(--navy); margin-bottom: 12px;">Campus Church Services</h3>
@@ -140,8 +88,8 @@
                     <div class="section-label">Our Calling</div>
                     <h2 class="section-title">Saved to Serve</h2>
                     <div class="title-rule left"></div>
-                    <p>The truest measure of a Christian education is not found in academic trophies, but in a towel and a basin. EVAA's institutional ethos is heavily oriented toward active, selfless service. We teach our students that they are "saved to serve."</p>
-                    <p>Our students are required to participate in structured community service programs, visiting the elderly, facilitating children's programs in nearby barangays, and engaging in environmental cleanups. During special mission activities, upperclassmen are given the incredible responsibility of leading out in evangelistic campaigns, learning firsthand how to articulate their faith to the public.</p>
+                    <p>The truest measure of a Christian education is not found in academic trophies, but in a towel and a basin. EVAA\'s institutional ethos is heavily oriented toward active, selfless service. We teach our students that they are "saved to serve."</p>
+                    <p>Our students are required to participate in structured community service programs, visiting the elderly, facilitating children\'s programs in nearby barangays, and engaging in environmental cleanups. During special mission activities, upperclassmen are given the incredible responsibility of leading out in evangelistic campaigns, learning firsthand how to articulate their faith to the public.</p>
                     <p>These experiences instill a profound sense of purpose. Whether our alumni go on to become nurses, accountants, or engineers, they enter the secular workforce viewing their profession as a sacred ministry.</p>
                 </div>
                 <div>
@@ -188,60 +136,5 @@
                 </div>
             </div>
         </section>
-    </main>
-
-    <!-- Shared Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="footer-brand">
-                        <svg viewBox="0 0 100 120" style="width: 32px; height: 32px;" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M50 0 L100 20 L100 60 C100 90 50 120 50 120 C50 120 0 90 0 60 L0 20 Z" fill="currentColor" stroke="#FFD600" stroke-width="4"/>
-                            <rect x="46" y="20" width="8" height="60" fill="#FFD600"/>
-                            <rect x="30" y="40" width="40" height="8" fill="#FFD600"/>
-                            <path d="M30 90 Q50 100 70 90" fill="none" stroke="#FFD600" stroke-width="4"/>
-                        </svg>
-                        East Visayan Adventist Academy
-                    </div>
-                    <div class="footer-motto">The Guardian of Truth</div>
-                    <p style="opacity: 0.8; font-size: 14px; margin-bottom: 16px; max-width: 300px;">Preparing young people to live lives of usefulness and service, reflecting the character of Christ.</p>
-                    <a href="https://facebook.com/eastvisayanadventistacademyofleyte" style="color: var(--gold);">Facebook Page ↗</a>
-                </div>
-                <div>
-                    <h4>Quick Links</h4>
-                    <div class="footer-links">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About Us</a>
-                        <a href="academics.html">Academics</a>
-                        <a href="campus.html">Campus & Boarding</a>
-                        <a href="spiritual-life.html">Spiritual Life</a>
-                        <a href="admissions.html">Admissions</a>
-                        <a href="campus-life.html">Campus Life</a>
-                        <a href="alumni.html">Alumni</a>
-                    </div>
-                </div>
-                <div>
-                    <h4>Contact & Affiliation</h4>
-                    <ul class="list-unstyled" style="font-size: 14px; opacity: 0.8; display: flex; flex-direction: column; gap: 8px;">
-                        <li>Academy Heights, Brgy. San Sotero,<br>Javier, Leyte 6511, Philippines</li>
-                        <li>P.O. Box 241, 6500 Tacloban City</li>
-                        <li>+63 935 835 7254</li>
-                        <li style="margin-top: 12px; color: var(--gold);">DepEd Region VIII Recognized</li>
-                        <li style="font-size: 12px; opacity: 0.7;">East Visayan Conference · Central Philippine Union Conference · Southern Asia-Pacific Division</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>&copy; 2025 East Visayan Adventist Academy of Leyte, Inc. · All Rights Reserved</span>
-                <div style="display: flex; gap: 16px;">
-                    <span>DepEd Recognized</span>
-                    <a href="#">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script type="module" src="/src/main.js"></script>
-</body>
-</html>
+  `;
+}
