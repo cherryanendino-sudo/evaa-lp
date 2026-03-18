@@ -261,7 +261,6 @@ function initAnimations() {
     const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
     heroTl
-      .from('.hero-video', { opacity: 0, scale: 1.1, duration: 1.5 }, 0)
       .from('.hero .tag', { opacity: 0, y: 20, duration: 0.5 }, 0.3)
       .from('.hero h1', { opacity: 0, y: 30, duration: 0.7 }, 0.5)
       .from('.hero-subtext', { opacity: 0, y: 20, duration: 0.5 }, 0.8)
