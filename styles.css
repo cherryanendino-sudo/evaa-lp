@@ -317,7 +317,7 @@ form:invalid .btn-primary { opacity: 0.8; }
 .map-placeholder span { position: relative; z-index: 1; background: white; padding: 8px 16px; border-radius: 4px; box-shadow: var(--shadow-card); }
 
 /* PROGRAMS CAROUSEL */
-.programs-section { position: relative; overflow: hidden; padding: 100px 0 120px; background: linear-gradient(180deg, var(--cream) 0%, #eef3f9 30%, #eef3f9 85%, var(--navy) 100%); }
+.programs-section { position: relative; overflow: hidden; padding: 100px 0 120px; background: #eef3f9; }
 .carousel-wrapper { position: relative; width: 100%; margin: 0 auto; overflow: hidden; }
 .carousel-track {
     position: relative; display: flex; align-items: center; justify-content: center;
