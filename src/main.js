@@ -261,26 +261,22 @@ function initAnimations() {
     const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
 
     heroTl
-      .from('.hero .tag', { opacity: 0, y: 20, duration: 0.5 })
-      .from('.hero h1', { opacity: 0, y: 30, duration: 0.7 }, '-=0.2')
-      .from('.hero-subtext', { opacity: 0, y: 20, duration: 0.5 }, '-=0.3')
-      .from('.hero .btn-group', { opacity: 0, y: 20, duration: 0.5 }, '-=0.2')
+      .from('.hero-video', { opacity: 0, scale: 1.1, duration: 1.5 }, 0)
+      .from('.hero .tag', { opacity: 0, y: 20, duration: 0.5 }, 0.3)
+      .from('.hero h1', { opacity: 0, y: 30, duration: 0.7 }, 0.5)
+      .from('.hero-subtext', { opacity: 0, y: 20, duration: 0.5 }, 0.8)
+      .from('.hero .btn-group', { opacity: 0, y: 20, duration: 0.5 }, 1.0)
       .from('.hero .trust-badges span', {
         opacity: 0,
         y: 10,
         stagger: 0.1,
         duration: 0.4,
-      }, '-=0.2')
-      .from('.hero-right', {
-        opacity: 0,
-        x: 40,
-        duration: 0.8,
-      }, '-=0.8')
+      }, 1.1)
       .from('.hero-bottom-rule', {
         scaleX: 0,
         transformOrigin: 'left center',
         duration: 0.6,
-      }, '-=0.3');
+      }, 1.2);
   }
 
   // ── Hero Inner (sub-page heroes) ──────────────────────────────────────────
