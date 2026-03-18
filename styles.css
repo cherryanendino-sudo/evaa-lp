@@ -231,40 +231,56 @@ textarea.form-control { resize: vertical; }
 .icon-circle { width: 48px; height: 48px; border-radius: 50%; background: var(--gold-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: var(--gold-text); }
 .icon-circle svg { width: 24px; height: 24px; fill: currentColor; }
 
-/* PILLARS (Editorial Layout) */
-.pillars { display: flex; flex-direction: column; gap: 0; max-width: 800px; margin: 0 auto; }
-.pillar-row {
-  display: flex; align-items: stretch; gap: 0; position: relative;
-  padding: 40px 0; border-bottom: 1px solid var(--border);
+/* BENTO GRID */
+.bento-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  grid-auto-rows: minmax(160px, auto);
 }
-.pillar-row:last-child { border-bottom: none; }
-.pillar-number {
-  font-family: var(--font-display); font-size: 72px; font-weight: 700;
-  color: var(--gold-pale); line-height: 1; flex-shrink: 0; width: 100px;
-  display: flex; align-items: flex-start; padding-top: 4px;
+.bento-tile {
+  border-radius: 16px; padding: 28px; display: flex; flex-direction: column;
+  justify-content: flex-end; position: relative; overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.pillar-body { display: flex; gap: 0; flex: 1; }
-.pillar-accent { width: 4px; background: var(--gold); border-radius: 2px; flex-shrink: 0; margin-right: 28px; }
-.pillar-text { flex: 1; }
-.pillar-text h3 { font-size: 22px; color: var(--navy); margin-bottom: 10px; font-weight: 600; }
-.pillar-text p { color: var(--text-body); font-size: 15px; line-height: 1.75; margin-bottom: 16px; }
-.pillar-link {
-  color: var(--navy); font-size: 13px; font-weight: 600; text-transform: uppercase;
-  letter-spacing: 0.5px; transition: color 0.2s;
-}
-.pillar-link:hover { color: var(--gold-text); }
+.bento-tile:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(15,34,72,0.12); }
 
-.pillar-row--alt { flex-direction: row-reverse; text-align: right; }
-.pillar-row--alt .pillar-number { justify-content: flex-end; }
-.pillar-row--alt .pillar-body { flex-direction: row-reverse; }
-.pillar-row--alt .pillar-accent { margin-right: 0; margin-left: 28px; }
+/* Sizes */
+.bento-large { grid-column: span 2; }
+.bento-tall { grid-row: span 2; }
 
-@media (max-width: 640px) {
-  .pillar-row, .pillar-row--alt { flex-direction: column; gap: 12px; padding: 28px 0; text-align: left; }
-  .pillar-row--alt { text-align: left; }
-  .pillar-row--alt .pillar-body { flex-direction: row; }
-  .pillar-row--alt .pillar-accent { margin-left: 0; margin-right: 28px; }
-  .pillar-number { font-size: 48px; width: auto; }
+/* Color variants */
+.bento-navy { background: var(--navy); color: var(--white); }
+.bento-navy h3 { color: var(--white); }
+.bento-navy-light { background: var(--navy-light); color: var(--white); }
+.bento-navy-light h3 { color: var(--white); }
+.bento-navy-mid { background: var(--navy-mid); color: var(--white); }
+.bento-navy-mid h3 { color: var(--white); }
+.bento-gold { background: var(--gold); color: var(--navy); }
+.bento-gold-dark { background: #B8960F; color: var(--white); }
+.bento-cream { background: var(--white); color: var(--navy); border: 1px solid var(--border); }
+
+/* Content elements */
+.bento-label { font-family: var(--font-display); font-size: 42px; font-weight: 700; opacity: 0.15; position: absolute; top: 20px; right: 24px; line-height: 1; }
+.bento-tile h3 { font-size: 20px; margin-bottom: 8px; }
+.bento-tile p { font-size: 13px; line-height: 1.6; opacity: 0.85; margin-bottom: 12px; }
+.bento-link { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gold); transition: opacity 0.2s; }
+.bento-link:hover { opacity: 0.8; }
+.bento-cream .bento-link { color: var(--navy); }
+
+.bento-stat { font-family: var(--font-display); font-size: 36px; font-weight: 700; line-height: 1; }
+.bento-stat-large { font-family: var(--font-display); font-size: 48px; font-weight: 700; line-height: 1; }
+.bento-stat-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.8; margin-top: 4px; }
+
+.bento-icon { width: 48px; height: 48px; margin-bottom: 12px; color: var(--gold-text); }
+.bento-icon svg { width: 100%; height: 100%; }
+.bento-caption { font-size: 13px; font-weight: 600; color: var(--navy); }
+
+@media (max-width: 960px) {
+  .bento-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .bento-grid { grid-template-columns: 1fr; }
+  .bento-large { grid-column: span 1; }
+  .bento-tall { grid-row: span 1; }
 }
 
 /* NEWS CARDS */
